@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+
+    <link href="CSS/style.css" type="text/css" rel="stylesheet" />
+    <link href="CSS/title-animation.css" type="text/css" rel="stylesheet" />
+    <link href="CSS/form.css" type="text/css" rel="stylesheet" />
+    <link href="CSS/menu.css" type="text/css" rel="stylesheet" />
+
+    <link href="CSS/media-queries.css" type="text/css" rel="stylesheet" />
+    <!-- <link href="CSS/rotating.css" type="text/css" rel="stylesheet" /> -->
+
+    <title>Game Tester Agency</title>
+</head>
+
+<body>
+    <!-- <div id="loading-wheel" >
+        <div class="background"></div>
+        <img src="images/bike-wheel.png" alt="bike wheel" class="rotating" />
+    </div>
+     -->
+    <header class="">
+        <div class="logo"><i class="fas fa-gamepad"></i></div>
+
+        <nav class="navbar">
+            <i class="menu fas fa-bars"></i>
+            <ul class="hidden drop-down">
+              <a href="index.html"><li class="fas fa-home" title="Home"></li></a>
+              <a href="#length"><li class="fas fa-dice-d20" title="We test all lengths of games"></li></a>
+              <a href="#ages"><li class="fas fa-users" title="We have testers of all ages"></li></a>
+              <a href="#levels"><li class="fas fa-hat-wizard" title="We have testers of all levels"></li></a>
+              <a href="#documentation"><li class="fas fa-video" title="We deliver thorough documentation"></li></a>
+              <a href="#contact"><li class="fas fa-envelope" title="Get in touch to get started"></li></a>
+            </ul>
+          </nav>
+    </header>
+
+    <main class="">
+
+        <video playsinline autoplay muted id="bgvid">
+            <source src="images/playing-board-game.mp4" type="video/mp4">
+        </video>
+        
+        <div class="intro">
+            <h1 class="title">Game Tester Agency</h1>
+            <div class="overlay"></div>
+            <a href="#">
+                <button> 
+                    Find Out More<br>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </a>
+        </div>
+    </main>
+    <div class="flexcontainer">
+    <section id="length">
+        <h2 class="fas fa-dice-d20"></h2>
+        <a name="length"></a>
+
+    </section>
+
+    <section id="ages">
+        <h2 class="fas fa-users"></h2>
+        <a name="ages"></a>
+
+    </section>
+
+    <section id="levels">
+        <h2 class="fas fa-hat-wizard"></h2>
+        <a name="levels"></a>
+
+    </section>
+
+    <section id="documentation">
+        <h2 class="fas fa-video"></h2>
+        <a name="documentation"></a>
+
+    </section>
+
+</div>  
+
+    <section id="contact">
+        <a name="contact"></a>
+        <!-- <h3 class="contact-title sub-title">Contact</h3> -->
+<!-- 
+        <div class="small-fact">
+            <img src="images/tape.png" alt="">
+            <p class="contact-text">“For each person who switches from a private, 
+                polluting mode of transport to a bicycle … a city experiences 
+                reduced carbon emissions and improved air quality.” (Peach, 2018)
+            </p>
+        </div> -->
+
+        <form action="/" class="decor">
+            <div class="form-left-decoration"></div>
+            <div class="form-right-decoration"></div>
+            <div class="circle"></div>
+            <div class="form-inner">
+              <h1>Contact us</h1>
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <textarea placeholder="Message..." rows="5"></textarea>
+              <button type="submit" href="/">Send Message</button>
+            </div>
+          </form>
+     
+
+</section>
+
+
+    <footer class="">
+
+
+        <div class="logo"><i class="fas fa-gamepad"></i></div>
+
+    </footer>
+    
+    <script src="./JS/app.js" defer></script>
+    
+</body>
+
+</html>

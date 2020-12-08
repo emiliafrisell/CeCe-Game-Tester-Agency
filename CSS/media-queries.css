@@ -1,0 +1,201 @@
+
+@media only screen and (min-width: 573px) {
+    #snapshot {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width:650px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100px;
+    }
+
+    .logo {
+        height: 86px;
+        width: 86px;
+    }
+    
+    
+    .logo i {
+        font-size: 63px;
+    }
+    main {
+        margin-top: 115px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    #snapshot {
+        height: 180px;
+    }
+
+    #facts {
+        padding: 0px;
+    }
+
+
+.sub-title {
+    font-size: 2.5rem;
+}
+
+    button {
+        /* margin-top: 0px; */
+        margin-bottom: 60px;
+    }
+
+
+.small-fact {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    left: 4%;
+    width: 270px;
+
+    background-color: rgb(251, 214, 144);
+    color: var(--text-color);
+
+    /* padding: 1%; */
+    padding-top: 0px;
+    margin-right: 1rem;
+
+    box-shadow: 2px 2px 4px gray;
+}
+
+.small-fact img {
+    width: 150px;
+    position: relative;
+    top: -20px;
+    left: calc(50% - 75px);
+}
+
+.small-fact p {
+    padding-top: 0px;
+    /* padding-left: 10%; */
+}
+}
+
+
+@media only screen and (min-width:800px) {
+
+
+    .logo {
+        height: 96px;
+        width: 96px;
+    }
+    
+    
+    .logo i {
+        font-size: 70px;
+    }
+
+    header {
+        height: 115px;
+    }
+
+    h1 {
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+        font-size: 4rem;
+        
+    }
+
+
+    button {
+        margin-top: 0px;
+    }
+
+    .sub-title {
+        font-size: 3rem;
+    }
+
+    .flexcontainer section {
+        scroll-margin-top: 180px;
+    }
+
+    #contact {
+        scroll-margin-top: 130px;
+    }
+
+}
+@media only screen and (min-width:858px) {
+
+    nav {
+        margin-top:
+            1rem;
+    }
+    .drop-down {
+        position: relative;
+        top: 0px;
+        height: 60px;
+        width: 600px;
+        background: transparent;
+        margin-top: -20px;
+        /* background-color: var(--dark-sienna);  */
+    }
+
+    .drop-down li {
+        display: inline;
+        
+        font-weight: bold;
+        /* color: var(--mellow-apricot); */
+        padding: 15px;
+        padding-bottom: 30px;
+        margin: 10px;
+        margin-top: 0;
+    }
+
+    .drop-down li:hover {
+        color: black;
+        border-top: 6px solid var(--illuminating-emerald);
+    }
+}
+
+@media only screen and (min-width:920px) {
+
+    .intro {
+        width: 90%;
+    }
+
+    #snapshot {
+        margin-top: -60px;
+        height: 400px;
+    }
+
+    #about {
+        min-height: fit-content;
+    }
+    
+}
+
+@media only screen and (min-width:980px) {
+    #logo {
+        height: 100px;
+    }
+
+    main h1 {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (min-width:1080px) {
+    main {
+        min-height: 80vh;
+    }
+    
+    h1 {
+        /* margin-top: 15%;
+        margin-left: 10%; */
+    }
+
+    .intro {
+        /* margin-top: -100px; */
+    }    
+    
+    button {
+        margin-top: 20px;
+    }
+}

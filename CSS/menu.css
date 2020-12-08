@@ -1,0 +1,51 @@
+
+ nav i {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+      z-index: 600;
+      color: var(--illuminating-emerald);
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  font-size: 1.2rem;
+}
+
+.drop-down {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 500;
+
+  text-align: center;
+  list-style: none;
+
+  height: 100vh;
+  width: 55px;
+
+  font-size: 1rem;
+  background-color: rgba(255,255,255, 0.8);
+
+  padding-top: 4rem;
+  padding: 15px;
+  margin-top: 1rem;
+}
+
+.drop-down li:hover {
+  color: var(--illuminating-emerald);
+}
+
+.drop-down li {
+  /* float: right; */
+
+    display: block;
+    margin-top: 1rem;
+  text-emphasis: 2em;
+  font-size: 1.4rem;
+  color: black;
+  line-height: 1.5rem;
+}
