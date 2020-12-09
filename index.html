@@ -21,6 +21,8 @@
     <link href="CSS/title-animation.css" type="text/css" rel="stylesheet" />
     <link href="CSS/form.css" type="text/css" rel="stylesheet" />
     <link href="CSS/menu.css" type="text/css" rel="stylesheet" />
+    <link href="CSS/flip.css" type="text/css" rel="stylesheet" />
+    <link href="CSS/loading-animation.css" type="text/css" rel="stylesheet" />
 
     <link href="CSS/media-queries.css" type="text/css" rel="stylesheet" />
     <!-- <link href="CSS/rotating.css" type="text/css" rel="stylesheet" /> -->
@@ -29,11 +31,6 @@
 </head>
 
 <body>
-    <!-- <div id="loading-wheel" >
-        <div class="background"></div>
-        <img src="images/bike-wheel.png" alt="bike wheel" class="rotating" />
-    </div>
-     -->
     <header class="">
         <div class="logo"><i class="fas fa-gamepad"></i></div>
 
@@ -51,6 +48,17 @@
     </header>
 
     <main class="">
+        <div class="loader">
+            <div class="background"></div>
+            <div class="loader-inner pacman">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
         <div id="cloud-intro"></div>
         <video playsinline autoplay muted id="bgvid">
             <source src="" type="video/mp4">
@@ -62,13 +70,21 @@
                 <img src="images/mario.png" />
             </h1>
             <div class="overlay"></div>
-            <p> We test your games </p>
+            <p id="test"> We test your games </p>
             <a href="#catch">
-                <button> 
-                    Find Out More<br>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
+                <div class="flip-button">
+                    <div class="flip-button-inner">
+                      <div class="flip-button-front">
+                        <img src="https://i.pinimg.com/474x/af/01/e9/af01e9c939e83d8acd1bc97bc8e69aca.jpg" alt="Question Mark" style="width:100px;height:100px;">
+                      </div>
+                      <div class="flip-button-back">
+                        <img src="images/Screenshot 2020-12-09 at 19.48.42.png" alt="Question Mark" style="width:100px;height:100px;">
+                        <p>Find Out More</p>
+                      </div>
+                    </div>
+                  </div>
             </a>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </main>
 

@@ -20,7 +20,6 @@ let catches = [
 
 const setupEventListeners = function() {
     menu.addEventListener('click', displayMenu);
-
 }
 
 const displayMenu = function() {
@@ -118,7 +117,13 @@ function changeText() {
 
   window.onresize = loadPageSize;
 
+  
+   
+//   setTimeout(function(){  document.querySelector('.loader').classList.add('hidden'); }, 2000);
+
   window.onload = function() {
+    document.querySelector('.loader').classList.add('hidden');
+
     setupEventListeners();
     loadPageSize();
     // changeCatches();

@@ -32,7 +32,7 @@
       mix-blend-mode: screen;
   }
 
-  .intro img {
+  h1 img {
     position: absolute;
     display: inline;
     z-index: -1;
@@ -43,7 +43,7 @@
     -webkit-animation-duration: 15s;
   }
   
-  .intro img, .intro .overlay {
+  h1 img, .intro .overlay {
     left: 18%;
   }
   @keyframes underline {
@@ -91,7 +91,7 @@
 
 #cloud-intro{
   position: absolute;
-  height: 100%;
+  height: 98%;
   width: 100%;
   top: 0px; 
   left: 0px;
@@ -111,3 +111,25 @@
   }
 
 }
+
+.intro #test {
+  position: relative;
+  font-style: italic;
+  font-size: 1.5rem;
+  -webkit-animation: linear;
+  -webkit-animation-name: test;
+  -webkit-animation-duration: 4s;
+  }
+  
+  @-webkit-keyframes test {
+      0% {
+          left: -100%;
+      }
+
+      90% {
+        left: -100%;
+      }
+      100% {
+          left: 0;    
+      }
+  }

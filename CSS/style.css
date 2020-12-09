@@ -8,7 +8,7 @@
     --ivory: #F9FDF2ff;
     --corn: #FFEB72ff;
     --old-burgundy: #482D37ff;
-    
+    --persimmon: #E45E10ff;
 
 --tropical-rain-forest: #367A64ff;
 --eerie-black: #1C1C1Dff;
@@ -56,7 +56,6 @@ header {
     color: black;
     border: 3px solid black;
     border-radius: 5px;
-
 }
 
 .logo i {
@@ -67,10 +66,9 @@ header {
 }
 
 footer .logo {
-    /* display: absolute;
-    left: 0px; */
     float: right;
 }
+
   main {
       overflow: hidden;
       background-color: lightblue;
@@ -95,14 +93,11 @@ footer .logo {
 
   main h1 {
       font-family: 'Evil Empire';
-    /* font-family: 'VT323', monospace; */
     margin: auto;
 
     font-size: 3.5rem;
-    /* color: var(--ivory); */
     text-shadow: 2px 2px 2px white;
-    /* top: 20%; */
-    
+
     padding: 2rem 20px 0px 20px;
     margin-bottom: 2rem;
   }
@@ -112,38 +107,12 @@ footer .logo {
       text-align: center;
       justify-content: center;
       transform: translateY(-60vh);
-      /* display: flex;
-      justify-content: space-evenly;
-
-      margin: 0 auto;
-      margin-top: 60px;
-      width: 70%; */
   }
 
   p {
       color: gray;
-      /* margin-top: 20px; */
       line-height: 1.4;
       padding: 1rem;
-  }
-
-  button {
-      height: 80px;
-      width: 150px;
-      border-radius: 7px;
-      font-size: 1.2rem;
-
-      color: var(--ivory);
-      margin-top: 40px;
-      margin-bottom: 40px;
-
-      background-color: green;
-      border: none;
-      box-shadow: 2px 2px 4px gray;
-
-      transition: linear 1s;
-
-      cursor: pointer;
   }
 
   .fa-chevron-down {
@@ -165,15 +134,13 @@ footer .logo {
     }
 }
 
-.intro button:hover {
-    background-color: var(--old-burgundy);
-    color: var(--ivory);
-    transition: linear 1s;
+.intro {
+    margin: auto;
+}
 
-    -ms-transform: scale(1.05); /* IE 9 */
-    -webkit-transform: scale(1.05); /* Safari 3-8 */
-    transform: scale(1.05);
-
+.intro a {
+    position: relative;
+    z-index: 0;
 }
 
 #catch-container {
@@ -186,7 +153,6 @@ footer .logo {
 }
 
 #catch {
-
     scroll-margin-top: 100px;
 
 

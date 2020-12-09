@@ -1,0 +1,60 @@
+/* The flip button container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-button {
+    z-index: -1;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-button-inner {
+    z-index: -1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-button:hover .flip-button-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-button-front, .flip-button-back {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-button-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-button-back {
+    background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/daae9955-fbc8-4658-ae4e-3f381100b677/d4k5lsw-68b58c7d-09c1-43e2-bcfe-99a568a39be5.png/v1/fill/w_894,h_894,strp/empty_block_by_kkiittuuss_d4k5lsw-pre.png');
+    background-size: cover;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-button-back p {
+      color: black;
+      letter-spacing: 2px;
+      font-size: 1.35rem;
+      line-height: 1;
+      font-family: 'Evil Empire', sans-serif;
+      position: relative;
+      top: -100px;
+  }
