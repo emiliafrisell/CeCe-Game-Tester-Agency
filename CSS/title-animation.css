@@ -5,34 +5,47 @@
   }
   
   .intro h1 {
-    color: var(--primary-color);
+    
+    /* color: var(--primary-color); */
     transform: translateY(-600px);
+    position: relative;
     animation: 1.2s slideIn ease-in-out forwards 1s;
     z-index: 10;
     opacity: 0;
   }
   
-  .intro h1::before {
+  .intro .overlay {
       content: '';
       width: 0%;
       height: 35px;
       opacity: 4;
-      background-color: var(--secondary-color);
+      background: url('https://art.pixilart.com/82f97e33624310f.png') 0 0 repeat-x;
+      display: inline-block;
+      background-repeat: repeat-x;
+      background-size: contain;
+      /* background:inherit; */
+      background-position: 0 100%;
+      /* background-color: var(--secondary-color); */
       position: absolute;
-      bottom: -10px;
+      top: 90px;
       animation: 1s underline ease-in-out forwards 2s;
       mix-blend-mode: screen;
   }
-  
-  @keyframes skewBg {
-    0% {
-      transform: scale(.5);
-    }
-    100% {
-      transform: scale(1);
-    }
+
+  .intro img {
+    position: absolute;
+    display: inline;
+    z-index: -1;
+    bottom: 30px;
+    height: 80px;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: drive;
+    -webkit-animation-duration: 15s;
   }
   
+  .intro img, .intro .overlay {
+    left: 18%;
+  }
   @keyframes underline {
     100% {
       width: 100%;
@@ -45,3 +58,56 @@
       opacity: 1;
     }
   }
+
+  @-webkit-keyframes drive {
+    0% {
+      left: 18%;
+    }
+    15%{
+      left: 18%;
+    }
+    48% {
+      -webkit-transform: rotateY(0deg); 
+    }
+    50% { 
+      left: 115%;
+      -webkit-transform: rotateY(180deg); 
+    }
+    60% {
+      left: 115%;
+    }
+    98% {
+      -webkit-transform: rotateY(180deg); 
+    }
+    85% {
+      left: 18%;
+    }
+    100% {
+      left: 18%;    
+       -webkit-transform: rotateY(0deg);
+    }
+  }
+
+
+#cloud-intro{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px; 
+  left: 0px;
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0 200px,
+              url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
+              url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px 250px;
+	animation: wind 20s linear infinite;
+}
+
+@keyframes wind{
+  0% {
+    background-position: 0 200px, 0 300px, 100px 250px;
+  }
+  100% {
+    background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+  }
+
+}

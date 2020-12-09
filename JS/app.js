@@ -5,7 +5,18 @@ let title = document.querySelector('.title');
 let factText = document.querySelector('.facts-text');
 let factTitle = document.querySelector('.facts-title');
 let factImg = document.querySelector('.facts-img');
+let catchLine = document.querySelector('#catch');
+let i = 0;
 
+let catches = [
+            'Are your friends tired of you asking them to test your game over and over? We can help!',        
+            'Here at Game Tester Agency we help with testing of all types of games',        
+            'Short game of a few minutes or hours of quests? We got you.',
+            'Developing a childrens game? We have testers of all ages from 3 to 80!',
+            'Does it take a Wizard to tackle your challenges? No problem, we have testers of all levels',
+            'After testing we provide extensive documentation of the game experience and thorough feedback',
+            'Developing a Game and need to test it before Launch? <br> You\'ve come to the right place!'
+            ]
 
 const setupEventListeners = function() {
     menu.addEventListener('click', displayMenu);
@@ -26,7 +37,6 @@ const displayMenu = function() {
     }
   };
 
-  
 function hideMenu() {
     if (menu.classList.contains('hidden')) {
         menu.classList.remove('hidden');
@@ -63,47 +73,47 @@ function showImage() {
     }
 }
 
-  function loadPageSize() {
-    // let offset = title.offsetWidth/2;
-    // titlePosition = 'left: calc(50% - ' + offset + ');';
-    // title.style = titlePosition;
+function changeText() {
 
-    if (window.innerWidth > '920' || window.innerWidth >= '920') {
-        console.log('920')
-        
-        showMenu();
-        showImage();
-
-        if (title) { 
-
-        title.style = ''
+        if (catchLine.timer) {
+            window.clearTimeout(catchLine.timer);
         }
 
-       
+        catchLine.timer = window.setTimeout( function(){ 
+            catchLine.innerHTML = catches[i]; 
+
+            i++
+
+            if(i == catches.length) {
+                i = 0;
+            }
+
+            changeText(); 
+
+        }, 3000);  
+
+}
+
+  function loadPageSize() {
+
+    if (window.innerWidth > '920' || window.innerWidth >= '920') {
+        showMenu();
+        // showImage();       
+
     } else if (window.innerWidth > '858') {
         console.log('858')
         showMenu()
-        showImage();
+        // showImage();
 
     } else if (window.innerWidth > '650') {
         console.log('800')
-        showImage();
+        // showImage();
         hideMenu();
-
-        if(title) {
-            // title.innerHTML = 'Cycling Towards a Greener Tomorrow'
-        }
      
     }  else {
-        console.log('650')
-        console.log(title.offsetWidth)
         hideMenu()
-        showText()
-        // if (window.innerWidth < '650') 
-
+        // showText()
     }    
-    
-    // } else
 }
 
   window.onresize = loadPageSize;
@@ -111,5 +121,6 @@ function showImage() {
   window.onload = function() {
     setupEventListeners();
     loadPageSize();
-   
+    // changeCatches();
+    changeText();
   }

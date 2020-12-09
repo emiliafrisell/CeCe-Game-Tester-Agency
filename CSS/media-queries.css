@@ -97,7 +97,7 @@
     }
 
     h1 {
-        margin-top: 0.5rem;
+        /* margin-top: 0.5rem; */
         padding-top: 0.5rem;
         font-size: 4rem;
         
@@ -117,7 +117,7 @@
     }
 
     #contact {
-        scroll-margin-top: 130px;
+        scroll-margin-top: 170px;
     }
 
 }
