@@ -164,7 +164,7 @@ footer .logo {
     font-size: larger;
     font-style: italic;
     border-bottom: none;
-    color: var(--secondary-color );   
+    color: darkgreen;   
     
     padding: 1.5rem;
     
@@ -254,7 +254,7 @@ h2 {
     color: white;
 
     scroll-margin-top: 130px;
-    background-color: var(--secondary-color);
+    background-color: lightblue;
 }
 
 .contact-title {
@@ -279,7 +279,7 @@ h2 {
 }
 
 .contact-info li i {
-    color: var(--secondary-color);
+    color: lightblue;
 }
 .contact-info li:hover i{
     -ms-transform: scale(1.05); /* IE 9 */

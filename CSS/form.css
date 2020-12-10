@@ -94,13 +94,13 @@ input, textarea {
     border-radius: 20px;
     border: none;
     border-bottom: 4px solid #3e4f24;
-    background: var(--secondary-color);
+    background: lightblue;
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
+    color: black;
     }
     button:hover {
-    background: var(--secondary-color);
+    background: lightblue;
     } 
     @media (min-width: 568px) {
     form {
