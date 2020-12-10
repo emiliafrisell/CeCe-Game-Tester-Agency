@@ -5,8 +5,6 @@
   }
   
   .intro h1 {
-    
-    /* color: var(--primary-color); */
     transform: translateY(-600px);
     position: relative;
     animation: 1.2s slideIn ease-in-out forwards 1s;
@@ -23,11 +21,9 @@
       display: inline-block;
       background-repeat: repeat-x;
       background-size: contain;
-      /* background:inherit; */
       background-position: 0 100%;
-      /* background-color: var(--secondary-color); */
       position: absolute;
-      top: 90px;
+      top: 70px;
       animation: 1s underline ease-in-out forwards 2s;
       mix-blend-mode: screen;
   }
@@ -132,4 +128,132 @@
       100% {
           left: 0;    
       }
+  }
+
+  @media only screen and (max-width:1115px) {
+    .title img, .intro .overlay {
+      left: 10%;
+    }
+
+    @-webkit-keyframes drive {
+      0% {
+        left: 10%;
+      }
+      15%{
+        left: 10%;
+      }
+      48% {
+        -webkit-transform: rotateY(0deg); 
+      }
+      50% { 
+        left: 115%;
+        -webkit-transform: rotateY(180deg); 
+      }
+      60% {
+        left: 115%;
+      }
+      98% {
+        -webkit-transform: rotateY(180deg); 
+      }
+      85% {
+        left: 10%;
+      }
+      100% {
+        left: 10%;    
+         -webkit-transform: rotateY(0deg);
+      }
+    }
+  
+  }
+
+  @media only screen and (max-width:980px) {
+    .title img {
+      bottom: 20px;
+      height: 70px;
+    }
+
+    .intro .overlay {
+      top: 60px;
+    }
+
+    .intro #test {
+      font-size: 1.3rem;
+    }
+
+    .flip-button, 
+    .flip-button-inner,
+    .flip-button-front, 
+    /* .flip-button-front img,  */
+    .flip-button-back
+    /* .flip-button-back img { */
+      {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media only screen and (max-width:800px) {
+    .title img {
+      bottom: 20px;
+      height: 40px;
+    }
+
+    .intro .overlay {
+      top: 60px;
+      height: 25px;
+    }
+
+    .intro #test {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media only screen and (max-width:650px) {
+    .title img {
+      bottom: 10px;
+    }
+
+    .flip-button-front {
+      background-color: transparent;
+    }
+   }
+  @media only screen and (max-width:325px) {
+    .title img, .intro .overlay {
+      left: 0%;
+    }
+
+    @-webkit-keyframes drive {
+      0% {
+        left: 0%;
+      }
+      15%{
+        left: 0%;
+      }
+      48% {
+        -webkit-transform: rotateY(0deg); 
+      }
+      50% { 
+        left: 115%;
+        -webkit-transform: rotateY(180deg); 
+      }
+      60% {
+        left: 115%;
+      }
+      98% {
+        -webkit-transform: rotateY(180deg); 
+      }
+      85% {
+        left: 0%;
+      }
+      100% {
+        left: 0%;    
+         -webkit-transform: rotateY(0deg);
+      }
+    }
+  }
+
+  @media only screen and (max-width:295px) {
+    .title img {
+      bottom: 45px;
+    }
   }

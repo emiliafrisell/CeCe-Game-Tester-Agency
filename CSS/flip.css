@@ -34,7 +34,11 @@
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
-  
+  .flip-button-front img, 
+  .flip-button-back img{
+    width: 100%;
+    height: 100%;
+  }
   /* Style the front side (fallback if image is missing) */
   .flip-button-front {
     background-color: #bbb;

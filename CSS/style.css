@@ -21,7 +21,7 @@
 
 body {
     min-height: 89vh;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: sans-serif;
     /* color: rgb(73, 71, 71); */
     justify-content: center;
@@ -67,6 +67,11 @@ header {
 
 footer .logo {
     float: right;
+    position: relative;
+    top: 160px;
+    /* position: absolute;
+    bottom: 0px;
+    right: 0px; */
 }
 
   main {
@@ -95,7 +100,7 @@ footer .logo {
       font-family: 'Evil Empire';
     margin: auto;
 
-    font-size: 3.5rem;
+    /* font-size: 3.5rem; */
     text-shadow: 2px 2px 2px white;
 
     padding: 2rem 20px 0px 20px;
@@ -167,7 +172,7 @@ footer .logo {
 
     -webkit-animation: linear infinite;
     -webkit-animation-name: slide;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 5s;
     }
     
     @-webkit-keyframes slide {
@@ -187,6 +192,7 @@ footer .logo {
 
 .flexcontainer {
     width: 90%;
+    max-width: 900px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -200,7 +206,8 @@ footer .logo {
     padding: 1rem;  
     max-width: 400px;
     min-width: 270px;
-    height: 400px;
+    min-height: 400px;
+    /* overflow: auto; */
     scroll-margin-top: 100px;
 }
 
@@ -271,6 +278,9 @@ h2 {
     list-style: none;
 }
 
+.contact-info li i {
+    color: var(--secondary-color);
+}
 .contact-info li:hover i{
     -ms-transform: scale(1.05); /* IE 9 */
     -webkit-transform: scale(1.05); /* Safari 3-8 */
@@ -281,13 +291,10 @@ footer {
     padding: 0.5rem;
     display: flex;
     justify-content: end;
+    align-content: space-around;
     background-color: var(--dark-sienna);
     color: var(--mellow-apricot);
   }
-
-#loading-wheel img {
-   height: 120px;
-}
 
 .dummy {
     border: 2px solid orange;

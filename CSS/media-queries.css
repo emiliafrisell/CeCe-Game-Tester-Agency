@@ -26,7 +26,7 @@
         margin-top: 115px;
     }
 
-    h1 {
+    .intro h1 {
         font-size: 2.5rem;
     }
     #snapshot {
@@ -96,7 +96,7 @@
         height: 115px;
     }
 
-    h1 {
+    .intro h1 {
         /* margin-top: 0.5rem; */
         padding-top: 0.5rem;
         font-size: 4rem;
@@ -177,7 +177,7 @@
         height: 100px;
     }
 
-    main h1 {
+    .intro h1 {
         font-size: 5rem;
     }
 }
@@ -185,16 +185,7 @@
 @media only screen and (min-width:1080px) {
     main {
         min-height: 80vh;
-    }
-    
-    h1 {
-        /* margin-top: 15%;
-        margin-left: 10%; */
-    }
-
-    .intro {
-        /* margin-top: -100px; */
-    }    
+    } 
     
     button {
         margin-top: 20px;
